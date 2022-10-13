@@ -1,0 +1,24 @@
+[package]
+name = "wasmtime-demo"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+tokio = { version = "1.20.1", features = ["full"] }
+wasmtime = { version = "1.0.1" }
+tokio-modbus = { version = "0.5.3", default-features = false, features = ["tcp", "server", "tcp-server-unstable"] }
+socket2 = { version = "0.4.7" }
+clap = { version = "4.0.2" }
+tracing = "0.1"
+anyhow = "1.0.62"
+futures = "0.3.23"
+btleplug = "0.10.1"
+arrow2 = "0.14.1"
+
+[workspace]
+members = [
+    "crates/clap-demo",
+    "crates/arrow-demo",
+]
