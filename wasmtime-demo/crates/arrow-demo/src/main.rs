@@ -1,6 +1,7 @@
 mod r#type;
 mod modbus;
 mod connector;
+mod device;
 
 use arrow::array::{Array, Int32Array};
 

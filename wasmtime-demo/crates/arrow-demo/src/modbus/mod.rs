@@ -1,1 +1,1 @@
-mod modbus_to_arrow;
+mod modbus_to_u8;
